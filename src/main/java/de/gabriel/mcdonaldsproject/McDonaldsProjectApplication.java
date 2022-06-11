@@ -1,5 +1,6 @@
 package de.gabriel.mcdonaldsproject;
 
+import de.gabriel.mcdonaldsproject.order.OrderRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -15,8 +16,7 @@ public class McDonaldsProjectApplication {
     @Bean
     CommandLineRunner commandLineRunner(OrderRepository orderRepository) {
         return args -> {
-            Order order = new Order("Test 1");
-            orderRepository.save(order);
+            
         };
     }
 
